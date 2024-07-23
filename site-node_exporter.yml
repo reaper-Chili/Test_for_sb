@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 #- name: Playbook for install system monitoring
 - hosts: target
@@ -6,4 +7,14 @@
   remote_user: root
   
   roles:
+=======
+---
+#- name: Playbook for install system monitoring
+- hosts: target
+  gather_facts: true
+  serial: 5
+  remote_user: root
+  
+  roles:
+>>>>>>> 8ccd1f0644bddbf4c1297ee22f0b984678bbc61c
     - role: node-exporter-role
